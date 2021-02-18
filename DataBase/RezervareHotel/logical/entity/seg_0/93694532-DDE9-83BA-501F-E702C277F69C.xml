@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="93694532-DDE9-83BA-501F-E702C277F69C" name="Clienti">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:32:22 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id client" id="35B5AF1B-9EEA-27E0-02B1-C6A41188482F">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:32:29 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="28DE635B-21D6-7FE0-6789-BE597C1C08E1">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:33:03 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;1 and regexp_like(nume,&apos;^[A-Za-z ,.&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="7EF71018-5A43-0E39-D2B0-F9721C7CB36D">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:33:19 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume)&gt;1 and regexp_like(prenume,&apos;^[A-Za-z ,.&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="BEE2EAA3-E1BB-40C3-A771-586F5042AABA">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:33:40 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon,&apos;^[0]([1-9])[0-9]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1212D9DB-0277-ADF2-AF9E-C755C6BBEE46" name="Clienti PK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:33:01 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35B5AF1B-9EEA-27E0-02B1-C6A41188482F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8B8D1A2E-3ED0-2672-9571-97F12E43D328" name="Clienti_telefon_UN">
+<createdBy>user</createdBy>
+<createdTime>2020-12-09 13:56:35 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="false"/>
+</engineerTo>
+<newElementsIDs>BEE2EAA3-E1BB-40C3-A771-586F5042AABA</newElementsIDs>
+<usedAttributes>
+<attributeRef>BEE2EAA3-E1BB-40C3-A771-586F5042AABA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

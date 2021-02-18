@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22595511-C670-B510-FEB3-E0A412139C0F" name="Tip_camere">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>51C13E25-6267-F67D-0B4D-0211D2CD839A</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tip" id="FEDC73DC-F0F7-5032-BDD9-C6B0B3DC2140">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>66F3EB85-7F3D-ADA9-1C4D-A9C3A6DD639C</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_tip" id="D5E5C2F1-6B69-36C5-98C5-D5D038904A68">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>8DAFB17A-ACF0-56A7-545B-87756CE6726C</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6821D2F4-BD25-EC0B-ECAF-7EFD9D7D095A" name="Tip_camere_PK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>A99BE383-8A9F-DA97-69BA-5EB736E128E5</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEDC73DC-F0F7-5032-BDD9-C6B0B3DC2140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

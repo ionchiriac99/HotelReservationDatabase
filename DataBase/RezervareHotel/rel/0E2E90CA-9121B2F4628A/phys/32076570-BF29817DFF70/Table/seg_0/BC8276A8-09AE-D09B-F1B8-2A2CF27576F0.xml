@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Carte_de_identitate" directorySegmentName="seg_0" id="BC8276A8-09AE-D09B-F1B8-2A2CF27576F0">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="numar" id="53D4F708-3776-3421-214F-3636A298724C">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="localitate" id="7572F46E-8B86-40A7-33BF-C5515B630F58">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="adresa" id="8089EF59-69D4-1B53-27B3-44EB92FAB513">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sex" id="9CAF7E50-C995-60AA-1714-746580B32FA3">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_nastere" id="AA09E828-CD84-933F-B8C8-87DF1AD11F7E">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Clienti_id_client" id="AEF4FB99-2AE9-F485-79B6-D84374CD5986">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="seria" id="C85C38CE-03AC-88B3-6D12-E9F78F56E1CF">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CNP" id="FACB701B-FAEA-7164-01F4-A704C02C1ED3">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Carte_de_identitate_Clienti_FK" id="2DE4AB54-A66D-F518-326B-F8E9C161D3A6">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Carte_de_identitate_CNP_UN" id="1E0F519D-D33B-3A96-4C4B-EBD20F0B4088">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Carte_de_identitate_id_client_UN" id="2D519461-CD85-9880-E204-E8C8D17744EE">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

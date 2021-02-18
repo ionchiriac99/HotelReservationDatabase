@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Clienti" directorySegmentName="seg_0" id="39E3428A-3E61-C2D8-86A8-F9A8918587A6">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nume" id="17F65858-10FE-94D0-2AC3-C4C2071859E3">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="2AC63D30-2AC4-A419-9F57-D460FF399987">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="ABEB75CC-DB59-3EF9-91CA-BDD5D8AD85D8">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="CB627CCB-27F6-2774-C89E-2019F305B769">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefon" id="EF8AA6B1-C322-4917-C51F-EAF68342C89C">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Clienti_PK" id="CA77ED35-FACB-EF26-74CA-B828208B607D">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Clienti_telefon_UN" id="6794E6AD-D346-4F2F-2209-3BB5D0AF86B7">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

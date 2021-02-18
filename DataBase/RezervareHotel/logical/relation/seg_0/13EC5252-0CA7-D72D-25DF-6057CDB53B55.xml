@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carte de identitate Clienti FK" directorySegmentName="seg_0" id="13EC5252-0CA7-D72D-25DF-6057CDB53B55">
+<createdBy>user</createdBy>
+<createdTime>2020-12-09 14:35:59 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<sourcePk>1212D9DB-0277-ADF2-AF9E-C755C6BBEE46</sourcePk>
+<dominantRole>93694532-DDE9-83BA-501F-E702C277F69C</dominantRole>
+<identifying>false</identifying>
+<nameOnSource>au</nameOnSource>
+<nameOnTarget>identifica un</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>93694532-DDE9-83BA-501F-E702C277F69C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>00365E2E-7A95-7855-0F1F-7ACAE27F9ED3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00365E2E-7A95-7855-0F1F-7ACAE27F9ED3" name="Carte de identitate">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:34:16 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CNP" id="726D4382-343E-308D-B64F-D73929D5185D">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:34:26 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>cnp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(CNP)=13"/>
+</checkConstraint>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seria" id="904C3329-596F-8256-F644-EED5C3443A10">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:34:45 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>seria_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(seria,&apos;[A-Z]{2}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar" id="6517E4E3-AC9B-3B03-2BE6-170C8363633A">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:35:01 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>numar_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(numar)=6"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data nastere" id="F3F75D5E-C30D-6081-B6D7-25FE30FD65FC">
+<createdBy>user</createdBy>
+<createdTime>2020-12-09 17:21:55 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sex" id="14C42F2A-7D13-476B-0EA9-F39FFA308A0A">
+<createdBy>user</createdBy>
+<createdTime>2020-12-09 17:22:56 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>sex_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description=""/>
+<valueDef value="M" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id client" id="750F7255-D669-BBE6-42DA-E5F9E25A7245">
+<createdBy>user</createdBy>
+<createdTime>2020-12-09 14:35:59 UTC</createdTime>
+<generatorID>13EC5252-0CA7-D72D-25DF-6057CDB53B55</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<referedAttribute>35B5AF1B-9EEA-27E0-02B1-C6A41188482F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92FD956D-7A98-93E9-A04B-EEAC3A52ABC3" name="Carte_id_client_UN">
+<createdBy>user</createdBy>
+<createdTime>2020-12-09 14:37:03 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="false"/>
+</engineerTo>
+<newElementsIDs>13EC5252-0CA7-D72D-25DF-6057CDB53B55</newElementsIDs>
+<usedAttributes>
+<attributeRef>750F7255-D669-BBE6-42DA-E5F9E25A7245</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="53CCF7BB-2018-4819-6E6D-1B8A86098FBC" name="Carte_CNP_UN">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:04:59 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="false"/>
+</engineerTo>
+<newElementsIDs>726D4382-343E-308D-B64F-D73929D5185D</newElementsIDs>
+<usedAttributes>
+<attributeRef>726D4382-343E-308D-B64F-D73929D5185D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DF6EEF9A-9DA4-A25D-A056-9E2C148642DC" name="Carte serie nr UN">
+<createdBy>user</createdBy>
+<createdTime>2021-01-06 11:40:23 UTC</createdTime>
+<generatorID>C837A0BB-5B28-C2A7-2DE0-2A5504AE5E15</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>904C3329-596F-8256-F644-EED5C3443A10</attributeRef>
+<attributeRef>6517E4E3-AC9B-3B03-2BE6-170C8363633A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

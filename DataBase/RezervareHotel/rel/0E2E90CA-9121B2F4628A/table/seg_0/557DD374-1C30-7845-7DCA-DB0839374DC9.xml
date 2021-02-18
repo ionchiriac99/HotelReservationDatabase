@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="557DD374-1C30-7845-7DCA-DB0839374DC9" name="Servicii">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>E0FCA647-4F96-76E4-94CC-0D23EBFAD8A8</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_serviciu" id="F33BB6D4-8F0D-6EA0-EDA4-B972B872C5E6">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>33F8140A-0EB2-8350-3403-3B38C5F0F674</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_serviciu" id="6063A42D-8C72-DF85-7E1E-E16EC1983AFE">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>7F03FD40-879F-4745-0F54-D129A7AF50E7</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret_serviciu" id="581479A0-44D6-87E8-2F8D-FC5371330567">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:16:16 UTC</createdTime>
+<generatorID>93D67334-8A3B-80A2-BEFD-0C15E9FA5C67</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>pret_serviciu_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret_serviciu&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAD7E534-2046-8731-F328-DB35A89A1BD0" name="Servicii_PK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>F1B6E0D4-C8F2-9A61-30F2-063E8A6C816C</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F33BB6D4-8F0D-6EA0-EDA4-B972B872C5E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

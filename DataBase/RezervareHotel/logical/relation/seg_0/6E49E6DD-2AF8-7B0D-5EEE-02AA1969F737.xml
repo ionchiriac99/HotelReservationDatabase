@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Camere Tip camere FK" directorySegmentName="seg_0" id="6E49E6DD-2AF8-7B0D-5EEE-02AA1969F737">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:41:39 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<sourcePk>A99BE383-8A9F-DA97-69BA-5EB736E128E5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>descrie</nameOnSource>
+<nameOnTarget>are</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>51C13E25-6267-F67D-0B4D-0211D2CD839A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>79BAEF0E-141F-3502-ABD8-1D3BD949A088</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

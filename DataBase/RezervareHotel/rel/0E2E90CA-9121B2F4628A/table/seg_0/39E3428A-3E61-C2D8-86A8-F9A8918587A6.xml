@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39E3428A-3E61-C2D8-86A8-F9A8918587A6" name="Clienti">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>93694532-DDE9-83BA-501F-E702C277F69C</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="CB627CCB-27F6-2774-C89E-2019F305B769">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>35B5AF1B-9EEA-27E0-02B1-C6A41188482F</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="17F65858-10FE-94D0-2AC3-C4C2071859E3">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>28DE635B-21D6-7FE0-6789-BE597C1C08E1</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;1 and regexp_like(nume,&apos;^[A-Za-z ,.&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="ABEB75CC-DB59-3EF9-91CA-BDD5D8AD85D8">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>7EF71018-5A43-0E39-D2B0-F9721C7CB36D</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume)&gt;1 and regexp_like(prenume,&apos;^[A-Za-z ,.&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="EF8AA6B1-C322-4917-C51F-EAF68342C89C">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>BEE2EAA3-E1BB-40C3-A771-586F5042AABA</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon,&apos;^[0]([1-9])[0-9]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA77ED35-FACB-EF26-74CA-B828208B607D" name="Clienti_PK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>1212D9DB-0277-ADF2-AF9E-C755C6BBEE46</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB627CCB-27F6-2774-C89E-2019F305B769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6794E6AD-D346-4F2F-2209-3BB5D0AF86B7" name="Clienti_telefon_UN">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>8B8D1A2E-3ED0-2672-9571-97F12E43D328</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF8AA6B1-C322-4917-C51F-EAF68342C89C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

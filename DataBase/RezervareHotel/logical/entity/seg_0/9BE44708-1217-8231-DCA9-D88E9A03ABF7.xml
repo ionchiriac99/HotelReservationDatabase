@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BE44708-1217-8231-DCA9-D88E9A03ABF7" name="Rezervari">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:37:43 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id rezervare" id="402F760C-7EB9-DC48-5F89-E29C3947CF0D">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:37:50 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data start" id="A6310A3A-3DA8-F457-E8A3-2CFE1BA82B4F">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:38:05 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data end" id="3D7E58D7-B2DE-04D9-1346-A3548AAFA4A8">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:38:18 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costul" id="FDA59D18-CA8D-09EF-CB98-88D21776BB9E">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:38:41 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<constraintName>costul_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="costul&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clienti id client" id="978FDD66-ECDB-7F93-528E-33F261DC3615">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:40:31 UTC</createdTime>
+<generatorID>2ACA7598-3026-C33D-B5D1-8C66B5ECF59F</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<referedAttribute>35B5AF1B-9EEA-27E0-02B1-C6A41188482F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Camere id camera" id="DEB1D89B-18C8-F137-A159-5EE8BF69CE3D">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:05:57 UTC</createdTime>
+<generatorID>8A5ECD8B-CE0B-FD0A-A0FC-2D2750796F0D</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<referedAttribute>47CF459A-3346-4143-7B18-128F55D95E4D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="617F1F9E-52C6-B9CC-8265-0620E5E99C97" name="Rezervari PK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:38:02 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>402F760C-7EB9-DC48-5F89-E29C3947CF0D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

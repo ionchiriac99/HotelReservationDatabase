@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC8276A8-09AE-D09B-F1B8-2A2CF27576F0" name="Carte_de_identitate">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>00365E2E-7A95-7855-0F1F-7ACAE27F9ED3</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CNP" id="FACB701B-FAEA-7164-01F4-A704C02C1ED3">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>726D4382-343E-308D-B64F-D73929D5185D</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>cnp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(CNP)=13"/>
+</checkConstraint>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seria" id="C85C38CE-03AC-88B3-6D12-E9F78F56E1CF">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>904C3329-596F-8256-F644-EED5C3443A10</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>seria_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(seria,&apos;[A-Z]{2}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar" id="53D4F708-3776-3421-214F-3636A298724C">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>6517E4E3-AC9B-3B03-2BE6-170C8363633A</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>numar_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(numar)=6"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nastere" id="AA09E828-CD84-933F-B8C8-87DF1AD11F7E">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>F3F75D5E-C30D-6081-B6D7-25FE30FD65FC</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sex" id="9CAF7E50-C995-60AA-1714-746580B32FA3">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>14C42F2A-7D13-476B-0EA9-F39FFA308A0A</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<constraintName>sex_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description=""/>
+<valueDef value="M" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clienti_id_client" id="AEF4FB99-2AE9-F485-79B6-D84374CD5986">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>750F7255-D669-BBE6-42DA-E5F9E25A7245</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC2991EB-DAB1-0935-21E7-11084D96625A" referredColumn="CB627CCB-27F6-2774-C89E-2019F305B769"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D519461-CD85-9880-E204-E8C8D17744EE" name="Carte_id_client_UN">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>92FD956D-7A98-93E9-A04B-EEAC3A52ABC3</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEF4FB99-2AE9-F485-79B6-D84374CD5986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E0F519D-D33B-3A96-4C4B-EBD20F0B4088" name="Carte_CNP_UN">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>53CCF7BB-2018-4819-6E6D-1B8A86098FBC</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FACB701B-FAEA-7164-01F4-A704C02C1ED3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C837A0BB-5B28-C2A7-2DE0-2A5504AE5E15" name="Carte_seria_numar_UN">
+<createdBy>user</createdBy>
+<createdTime>2021-01-06 11:40:09 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C85C38CE-03AC-88B3-6D12-E9F78F56E1CF"/>
+<colUsage columnID="53D4F708-3776-3421-214F-3636A298724C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DE4AB54-A66D-F518-326B-F8E9C161D3A6" name="Carte_de_identitate_Clienti_FK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>13EC5252-0CA7-D72D-25DF-6057CDB53B55</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEF4FB99-2AE9-F485-79B6-D84374CD5986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Rezervari Clienti FK" directorySegmentName="seg_0" id="2ACA7598-3026-C33D-B5D1-8C66B5ECF59F">
+<createdBy>user</createdBy>
+<createdTime>2020-12-08 20:40:31 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<engineerTo>
+<item key="0E2E90CA-87A2-C471-2498-9121B2F4628A" value="true"/>
+</engineerTo>
+<sourcePk>1212D9DB-0277-ADF2-AF9E-C755C6BBEE46</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>fac</nameOnSource>
+<nameOnTarget>sunt ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>93694532-DDE9-83BA-501F-E702C277F69C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9BE44708-1217-8231-DCA9-D88E9A03ABF7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

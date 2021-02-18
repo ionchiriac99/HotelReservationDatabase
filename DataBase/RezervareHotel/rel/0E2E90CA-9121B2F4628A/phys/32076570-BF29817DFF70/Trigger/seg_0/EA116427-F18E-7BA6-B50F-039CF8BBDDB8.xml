@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_data_start" directorySegmentName="seg_0" id="EA116427-F18E-7BA6-B50F-039CF8BBDDB8">
+<createdBy>user</createdBy>
+<createdTime>2020-12-12 21:41:41 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_start <= SYSDATE )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR( :new.data_start, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>A396116F-28A7-4AC5-FF70-9E74715C1EF0</columns>
+<table>19127A3D-C397-5622-F642-F2B4AF12B5E7</table>
+</TriggerOraclev10g>

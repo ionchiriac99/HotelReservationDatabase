@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="960299A0-0D33-8A78-82F1-3B5A3B400919" name="rezervari_servicii_FK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rezervari_id_rezervare" id="11723A44-505C-1DF2-AC9F-19A01578578F">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA229D17-643F-F282-62DA-D238B1FCF896" referredColumn="01FE54ED-7368-BF50-FE23-EC1F7909F7FE"/>
+</associations>
+</Column>
+<Column name="Servicii_id_serviciu" id="84FB0E94-403B-8699-E6EF-81C286E384AB">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="369D793B-1B2C-79D6-917F-CE6FD598E923" referredColumn="F33BB6D4-8F0D-6EA0-EDA4-B972B872C5E6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="216CBFD1-F408-BC94-77FE-9EDECA9FB7E8" name="rezervari_servicii_FK_PK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11723A44-505C-1DF2-AC9F-19A01578578F"/>
+<colUsage columnID="84FB0E94-403B-8699-E6EF-81C286E384AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A53F324C-F2FB-1221-3D13-F2FF443DAABD" name="rez_serv_FK_Rezervari_FK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>4300D541-5DE5-AC73-1F5A-067BF54D02C7</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11723A44-505C-1DF2-AC9F-19A01578578F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C997522F-2575-AC08-E864-160EBEE40662" name="rez_serv_FK_Servicii_FK">
+<createdBy>user</createdBy>
+<createdTime>2020-12-11 19:07:48 UTC</createdTime>
+<generatorID>4300D541-5DE5-AC73-1F5A-067BF54D02C7</generatorID>
+<ownerDesignName>RezervareHotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84FB0E94-403B-8699-E6EF-81C286E384AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
