@@ -6,6 +6,6 @@ Hotelul dispune la dispozitia clientului mai multe tipuri de camere.
 Pe langa camere, clientul poate alege si serviicii suplimentare, cum ar fi: minibar, restaurant, parcarea masinii personale.
 Pentru rezervari, clientul este obligat sa aiba cartea de identitate la el si un numar de telefon valid.
 O rezervare poate contine doar o singura camera.
-Clientul trebuie sa indice intervalul de timp pentru camera rezervata. Intervalul de timp nu poate fi modificat ulterior. 
+Clientul trebuie sa indice intervalul de timp pentru camera rezervata.
 Daca clientul doreste sa rezerveze mai multe camere, atunci este obligat sa faca cate o rezervare pentru fiecare camera in parte.
 
